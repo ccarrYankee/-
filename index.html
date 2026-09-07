@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="html, css, теги, вёрстка, обучение">
+  <meta name="description" content="Домашнее задание: примеры всех тегов HTML и CSS из презентации «Основы HTML и CSS»">
+  <title>Домашнее задание — Основы HTML и CSS</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Домашнее задание: примеры тегов HTML и CSS</h1>
+    <p>Ниже собраны примеры всех тегов, которые встречались в презентации «Основы HTML и CSS».</p>
+  </header>
+
+  <nav>
+    <p>Навигация:</p>
+    <ul>
+      <li><a href="#structure">Структура страницы</a></li>
+      <li><a href="#headings">Заголовки и параграфы</a></li>
+      <li><a href="#lists">Списки</a></li>
+      <li><a href="#code">Код и цитаты</a></li>
+      <li><a href="#text">Разметка текста</a></li>
+      <li><a href="#containers">div и span</a></li>
+      <li><a href="#css-demo">Примеры CSS</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- Это комментарий: он не отображается на странице -->
+    <section id="structure">
+      <h2>Структура страницы</h2>
+      <p>Тег <code>&lt;main&gt;</code> выделяет основное содержание страницы. Тег <code>&lt;header&gt;</code> — это «шапка», а <code>&lt;footer&gt;</code> — «подвал». Тег <code>&lt;nav&gt;</code> отвечает за навигацию, а <code>&lt;aside&gt;</code> — за дополнительное содержание.</p>
+
+      <article>
+        <h3>Пример &lt;article&gt;</h3>
+        <p>Это самостоятельный, законченный фрагмент информации — например, отдельная заметка или новость.</p>
+      </article>
+
+      <aside>
+        <p>Это &lt;aside&gt; — дополнительное содержание, например, ссылка по теме или примечание.</p>
+      </aside>
+    </section>
+
+    <section id="headings">
+      <h2>Заголовки и параграфы</h2>
+      <h1>Заголовок h1</h1>
+      <h2>Заголовок h2</h2>
+      <h3>Заголовок h3</h3>
+      <h4>Заголовок h4</h4>
+      <h5>Заголовок h5</h5>
+      <h6>Заголовок h6</h6>
+      <p>Это обычный параграф &lt;p&gt;. По умолчанию он начинается с новой строки и имеет отступы сверху и снизу.</p>
+
+      <h3>Одиночный тег &lt;img&gt;</h3>
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='80'><rect width='120' height='80' fill='%234f8ef7'/><text x='60' y='45' font-size='14' fill='white' text-anchor='middle'>img</text></svg>" width="120" height="80" alt="Пример картинки">
+
+      <h3>Мнемоники</h3>
+      <p>Знак «меньше» — &lt;, знак «больше» — &gt;. Так можно показать символы, которые браузер иначе принял бы за начало тега.</p>
+    </section>
+
+    <section id="lists">
+      <h2>Списки</h2>
+
+      <h3>Неупорядоченный список &lt;ul&gt;</h3>
+      <ul>
+        <li>HTML отвечает за структуру</li>
+        <li>CSS отвечает за внешний вид</li>
+        <li>JavaScript отвечает за поведение</li>
+      </ul>
+
+      <h3>Упорядоченный список &lt;ol&gt; (с атрибутами start, reversed, type)</h3>
+      <ol start="3" type="I">
+        <li>Открыть редактор кода</li>
+        <li>Создать файл index.html</li>
+        <li>Подключить style.css</li>
+      </ol>
+
+      <h3>Список описаний &lt;dl&gt;</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Язык гипертекстовой разметки, отвечает за структуру страницы.</dd>
+        <dt>CSS</dt>
+        <dd>Каскадные таблицы стилей, отвечают за внешний вид страницы.</dd>
+      </dl>
+    </section>
+
+    <section id="code">
+      <h2>Код и цитаты</h2>
+
+      <h3>&lt;pre&gt; и &lt;code&gt;</h3>
+      <pre><code>body {
+  color: black;
+  background-color: white;
+}</code></pre>
+
+      <h3>Короткая цитата &lt;q&gt;</h3>
+      <p>Как говорил автор учебника: <q>HTML отвечает за структуру и содержание страницы</q>.</p>
+
+      <h3>Источник цитаты &lt;cite&gt;</h3>
+      <p><cite>«Основы HTML и CSS»</cite> — учебная презентация.</p>
+
+      <h3>Длинная цитата &lt;blockquote&gt;</h3>
+      <blockquote>
+        <p>Наследование в CSS — это механизм, с помощью которого значения свойств элемента-родителя передаются его элементам-потомкам.</p>
+      </blockquote>
+    </section>
+
+    <section id="text">
+      <h2>Разметка фрагментов текста</h2>
+
+      <p>Перенос строки внутри абзаца:<br>вторая строка после тега &lt;br&gt;.</p>
+
+      <p>Химическая формула воды: H<sub>2</sub>O. Возведение в степень: E = mc<sup>2</sup>.</p>
+
+      <p>Дата публикации: <time datetime="2026-09-01">1 сентября 2026 года</time>.</p>
+
+      <p>Это <em>по-настоящему</em> важная деталь (акцент, меняющий смысл предложения).</p>
+      <p>Термин <i>верстка</i> происходит от английского layout.</p>
+      <p>Этот текст выделен как <strong>очень важный</strong>.</p>
+      <p>Это вводное предложение статьи, выделенное просто для привлечения внимания — <b>полужирным</b>.</p>
+
+      <p><del>Старая цена: 1000 ₽</del> <ins>Новая цена: 800 ₽</ins></p>
+    </section>
+
+    <section id="containers">
+      <h2>div и span</h2>
+      <div class="card">
+        <p>Это блок &lt;div&gt; — контейнер для группировки других элементов, используется для стилизации и раскладки.</p>
+      </div>
+      <p>Внутри абзаца можно выделить <span class="highlight">отдельное слово</span> с помощью тега &lt;span&gt;.</p>
+    </section>
+
+    <section id="css-demo">
+      <h2>Примеры CSS</h2>
+      <p class="feature-kitten">Этот параграф оформлен через класс <code>feature-kitten</code> (селектор по классу).</p>
+      <p class="feature-kitten highlight-box">А этот — миксует сразу два класса.</p>
+      <div class="card"><p>Вложенный (контекстный) селектор <code>.card p</code> красит только параграфы внутри карточки.</p></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Домашняя работа по теме «Основы HTML и CSS», 2026 год.</p>
+  </footer>
+
+</body>
+</html>
