@@ -1,0 +1,103 @@
+/* Это CSS-комментарий. В отличие от HTML-комментариев, здесь код или подсказки пишутся между слэшем со звёздочкой и звёздочкой со слэшем. */
+
+/* --- Селектор по тегу: применяется ко всем <body> --- */
+body {
+  margin: 0;
+  padding: 0 16px 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222222;             /* цвет по #hex */
+  background-color: rgb(255, 255, 255); /* цвет по RGB */
+}
+
+/* --- Селектор по тегу --- */
+header {
+  padding: 24px 0;
+  border-bottom: 2px solid hsl(214, 90%, 60%); /* цвет по HSL */
+}
+
+h1, h2, h3 {
+  color: rgba(20, 20, 20, 0.9); /* цвет по RGBA, с прозрачностью */
+}
+
+/* --- Наследование: параграфы наследуют шрифт и цвет из body,
+   если явно не переопределены --- */
+p {
+  font-size: 1rem;   /* относительная единица: rem — от корневого html */
+  margin: 0.5em 0;   /* относительная единица: em — от шрифта самого элемента */
+}
+
+/* --- Селектор по тегу для списков --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+nav a {
+  color: hsl(214, 90%, 45%);
+  text-decoration: none;
+}
+
+/* --- Составное свойство: font задаёт сразу несколько параметров --- */
+code, pre {
+  font: 0.95em/1.4 "Courier New", monospace;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 12px;
+  overflow-x: auto;
+}
+
+code {
+  padding: 2px 6px;
+}
+
+/* --- Селектор по классу --- */
+.card {
+  width: 60%;              /* относительная единица: % от родителя */
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #eef4ff;
+  border-radius: 8px;
+}
+
+/* --- Контекстный (вложенный) селектор: только <p> внутри .card --- */
+.card p {
+  color: rgb(30, 60, 120);
+  margin: 0;
+}
+
+/* --- Класс, используемый через миксование --- */
+.highlight {
+  background-color: yellow;
+  padding: 0 4px;
+}
+
+/* --- Класс feature-kitten: базовое оформление --- */
+.feature-kitten {
+  color: #ffffff;
+  background-color: rgb(90, 130, 230);
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 40vw;              /* относительная единица: vw — % ширины окна */
+  max-width: 100%;
+}
+
+/* --- Пример миксования классов: .feature-kitten + .highlight-box --- */
+.highlight-box {
+  border: 2px dashed #333333;
+}
+
+/* --- Пример конфликта и каскада: если бы оба правила ниже задавали
+   один и тот же элемент, победило бы то, что находится ниже в коде --- */
+footer {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #dddddd;
+  font-size: 0.9em;
+  color: #666666;
+}
